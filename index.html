@@ -1,0 +1,409 @@
+	
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Currículo - Gabriel Henrique Silva de Jesus</title>
+
+    <style>
+
+        /* =========================
+           CORES DO SITE
+        ========================= */
+        :root {
+            --cor-principal: #21638b;
+            --cor-texto: #333333;
+            --cor-fundo: #f5f7f9;
+            --cor-branca: #ffffff;
+        }
+
+
+        /* =========================
+           CONFIGURAÇÕES GERAIS
+        ========================= */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+
+        /* =========================
+           CABEÇALHO
+        ========================= */
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+
+            max-width: 1000px;
+            margin: 20px auto;
+
+            padding: 25px;
+
+            background-color: var(--cor-branca);
+
+            border-top: 5px solid var(--cor-principal);
+            border-radius: 10px;
+
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            color: var(--cor-principal);
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header h2 {
+            color: var(--cor-principal);
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+
+        /* =========================
+           CONTEÚDO PRINCIPAL
+        ========================= */
+        main {
+            max-width: 900px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           SEÇÕES
+        ========================= */
+        section {
+            border-left: 4px solid var(--cor-principal);
+            padding: 20px;
+            margin: 20px 0;
+
+            border-radius: 8px;
+
+            background-color: var(--cor-branca);
+
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            color: var(--cor-principal);
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+
+        /* =========================
+           LINKS
+        ========================= */
+        a {
+            color: var(--cor-texto);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--cor-principal);
+            text-decoration: underline;
+        }
+
+
+        /* =========================
+           DESTAQUES
+        ========================= */
+        .destaque {
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           HABILIDADES
+        ========================= */
+        .habilidades {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .habilidades span {
+            background-color: var(--cor-principal);
+            color: var(--cor-branca);
+
+            padding: 8px 15px;
+
+            border-radius: 20px;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           GRID DE INFORMAÇÕES
+        ========================= */
+        .grade {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .grade div {
+            padding: 15px;
+
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+
+            background-color: var(--cor-fundo);
+        }
+
+
+        /* =========================
+           RODAPÉ
+        ========================= */
+        footer {
+            max-width: 900px;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .assinatura {
+            color: var(--cor-principal);
+        }
+
+
+        /* =========================
+           RESPONSIVIDADE
+        ========================= */
+        @media (max-width: 600px) {
+
+            header {
+                flex-direction: column;
+                text-align: center;
+                margin: 10px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            main {
+                margin: 0 10px;
+            }
+
+            section {
+                margin: 15px 0;
+                padding: 15px;
+            }
+
+            .grade {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         CABEÇALHO
+    ========================= -->
+
+    <header id="topo">
+
+        <div>
+
+            <h1>Gabriel Henrique Silva de Jesus</h1>
+
+            <p>
+                <strong>Idade:</strong> 20 anos
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h2>Informações de contato</h2>
+
+            <ul>
+
+                <li>
+                    <strong>Telefone:</strong>
+
+                    <a href="tel:+5515996557892">
+                        (15) 99655-7892
+                    </a>
+                </li>
+
+                <li>
+                    <strong>E-mail:</strong>
+
+                    <a href="mailto:gabrielcsco66@icloud.com">
+                        gabrielcsco66@icloud.com
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================= -->
+
+    <main>
+
+
+        <!-- OBJETIVO -->
+
+        <section>
+
+            <h2>Objetivo Profissional</h2>
+
+            <p class="destaque">
+                Busco uma oportunidade de estágio na área de Tecnologia,
+                especialmente em programação e desenvolvimento de sistemas,
+                com o objetivo de desenvolver minhas habilidades profissionais,
+                adquirir experiência prática e aplicar os conhecimentos
+                adquiridos durante minha graduação em Engenharia da Computação.
+            </p>
+
+        </section>
+
+
+        <!-- FORMAÇÃO -->
+
+        <section>
+
+            <h2>Formação Acadêmica</h2>
+
+            <ul>
+
+                <li>
+                    <strong>Ensino Médio Completo</strong> — Conclusão em 2024
+                </li>
+
+                <li>
+                    <strong>Engenharia da Computação</strong> —
+                    Graduação iniciada em 2025
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- EXPERIÊNCIA -->
+
+        <section>
+
+            <h2>Experiência Profissional</h2>
+
+            <p>
+                Possuo experiência profissional em atendimento,
+                organização e atividades administrativas e comerciais.
+            </p>
+
+            <div class="grade">
+
+                <div>
+                    <strong>Auxiliar de Vendas</strong><br>
+                    Santo Expedito Posto de Molas
+                </div>
+
+                <div>
+                    <strong>Serviços Gerais</strong><br>
+                    Fort Fruit LTDA
+                </div>
+
+            </div>
+
+            <p>
+                Embora ainda não possua experiência profissional diretamente
+                na área de Tecnologia, venho desenvolvendo conhecimentos por
+                meio da graduação em Engenharia da Computação e de projetos
+                acadêmicos.
+            </p>
+
+        </section>
+
+
+        <!-- CURSOS -->
+
+        <section>
+
+            <h2>Cursos Complementares</h2>
+
+            <ul>
+
+                <li>
+                    <strong>Excel Básico</strong> — Nova Net Piedade (2023)
+                </li>
+
+                <li>
+                    <strong>Administração</strong> — SENAI (2024)
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- HABILIDADES -->
+
+        <section>
+
+            <h2>Habilidades</h2>
+
+            <div class="habilidades">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Programação</span>
+                <span>Excel</span>
+                <span>Comunicação</span>
+                <span>Organização</span>
+                <span>Atendimento ao Cliente</span>
+                <span>Proatividade</span>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================= -->
+
+    <footer>
+
+        <h4 class="assinatura">
+            Currículo desenvolvido em HTML e CSS
+        </h4>
+
+    </footer>
+
+
+</body>
+
+</html>
+```
